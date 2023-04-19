@@ -1,6 +1,13 @@
 # FileWizard
 
-The tool will organize files in the directory and its subdirectories based on their file type and move them to the appropriate folders.
+File Wizard is a command-line tool that helps organize files based on their file type by moving them to appropriate folders. It uses Python's built-in `os` and `shutil` libraries to walk through the directory tree and identify each file's type based on its file extension. The tool then moves the file to the appropriate category folder based on the predefined `file_categories` dictionary.
+
+## Usage
+
+To use this tool, save the `file_wizard.py` script to your local machine and run it from the command line with the directory you want to organize as an argument:
+
+```python file_wizard.py /path/to/your/directory```
+
 
 ## Customization
 
