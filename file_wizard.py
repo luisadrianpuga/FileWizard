@@ -2,6 +2,15 @@ import os
 import shutil
 import argparse
 
+'''
+
+    To add a new folder and its associated file types, create a new dictionary item like this:
+    'folder_name': ['.file_extension1', '.file_extension2', ...]
+
+    To modify an existing folder and its file types, update its list of extensions in the dictionary.
+
+'''
+
 def file_wizard(directory):
     
     file_categories = {
@@ -13,7 +22,7 @@ def file_wizard(directory):
         'programs': ['.exe', '.msi', '.dmg', '.pkg', '.deb', '.rpm'],
         'code': ['.py', '.cpp', '.h', '.html', '.css', '.js', '.java', '.rb', '.pl', '.swift', '.json', '.key', '.pem'],
         'fonts': ['.ttf', '.otf', '.woff', '.woff2'],
-        'other': ['.localized']
+        # Add more folder items here as needed
     }
 
     for root, _, files in os.walk(directory):
